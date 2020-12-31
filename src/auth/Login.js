@@ -84,7 +84,7 @@ const Login = ({history}) => {
                 <Link 
                     to={'/registrar-usuario'}
                     className="mt-4 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-700 rounded text-lg text-center cursor-pointer"
-                >Crear cuenta nueva ?</Link>
+                >Crear cuenta</Link>
             </form>
         </>
     )

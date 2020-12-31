@@ -77,7 +77,7 @@ const EditProduct = ({history}) => {
 
             <form
                 onSubmit={handleSubmit} 
-                className="w-1/2 bg-white flex flex-col mx-auto">
+                className="w-full md:w-1/2 bg-white flex flex-col mx-auto">
                 <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Datos del producto</h2>
                 <p className="leading-relaxed mb-5 text-gray-600">Completa todos los campos</p>
                 <div className="relative mb-4">

@@ -60,7 +60,7 @@ const Register = ({history}) => {
         <>
             <h1 className="text-3xl text-center font-bold uppercase p-10">Nuevo Usuario</h1>
 
-            <form onSubmit={handleSubmit} className="w-1/2 bg-white flex flex-col mx-auto">
+            <form onSubmit={handleSubmit} className="w-full sm:w-1/2 bg-white flex flex-col mx-auto">
                 <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Datos del usuario</h2>
                 <p className="leading-relaxed mb-5 text-gray-600">Completa todos los campos</p>
                 <div className="relative mb-4">

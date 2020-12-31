@@ -4,7 +4,7 @@ const CardOrder = ({item}) => {
 
     const {total, cliente, pedido} = item;
     return (
-        <li className="text-gray-600 body-font mb-4">
+        <li className="w-full sm:w-1/2 xl:w-2/4 text-gray-600 body-font mb-4">
             
             <div className="container px-5 mx-auto">
                 

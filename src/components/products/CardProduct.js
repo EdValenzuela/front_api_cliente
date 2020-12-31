@@ -45,7 +45,7 @@ const CardProduct = ({ item }) => {
                   imagen ? (
                     <img
                         alt="img"
-                        className="w-full h-auto"
+                        className="object-contain w-full h-full"
                         src={`http://localhost:5000/${imagen}`}
                     />
                   ) : null 
