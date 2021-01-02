@@ -19,10 +19,12 @@ import Register from '../../auth/Register';
 
 import {AuthContext, MyAuthContext } from '../../context/AuthContext';
 
+import PrivateRoute from './PrivateRoute';
+
 const RouterDom = () => {
 
     const [auth, saveToken] = useContext(MyAuthContext);
-
+   
     return (
         <HashRouter basename="/">
             <div className="w-full">
@@ -30,16 +32,16 @@ const RouterDom = () => {
                     <Header/>
                     <div className="container px-5 pb-5 mx-auto bg-white h-full">
                         <Switch>
-                            <Route exact path="/" component={ MainClients } />
-                            <Route exact path="/clientes/new" component={ NewClient } />
-                            <Route exact path="/clientes/edit/:id" component={ EditClient } />
+                            <PrivateRoute exact path="/" component={ MainClients } />
+                            <PrivateRoute exact path="/clientes/new" component={ NewClient } />
+                            <PrivateRoute exact path="/clientes/edit/:id" component={ EditClient } />
 
-                            <Route exact path="/productos" component={ MainProducts } />
-                            <Route exact path="/productos/new" component={ NewProduct } />
-                            <Route exact path="/productos/edit/:id" component={ EditProduct } />
+                            <PrivateRoute exact path="/productos" component={ MainProducts } />
+                            <PrivateRoute exact path="/productos/new" component={ NewProduct } />
+                            <PrivateRoute exact path="/productos/edit/:id" component={ EditProduct } />
 
-                            <Route exact path="/pedidos" component={ MainOrders } />
-                            <Route exact path="/pedidos/new/:id" component={ NewOrder } />
+                            <PrivateRoute exact path="/pedidos" component={ MainOrders } />
+                            <PrivateRoute exact path="/pedidos/new/:id" component={ NewOrder } />
 
                             <Route exact path="/iniciar-sesion" component={ Login } />
                             <Route exact path="/registrar-usuario" component={ Register } />
