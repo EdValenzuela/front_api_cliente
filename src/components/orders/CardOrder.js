@@ -3,6 +3,7 @@ import React from 'react'
 const CardOrder = ({item}) => {
 
     const {total, cliente, pedido} = item;
+
     return (
         <li className="w-full sm:w-1/2 xl:w-2/4 text-gray-600 body-font mb-4">
             
@@ -23,8 +24,12 @@ const CardOrder = ({item}) => {
                                 {
                                     pedido.map( item => (
                                         <li key={item._id}>
-                                            <p className="capitalize leading-relaxed text-base">Nombre: {item.producto.nombre}</p>
-                                            <p className="capitalize leading-relaxed text-base">Precio: ${item.producto.precio}</p>
+                                            {/* <p className="capitalize leading-relaxed text-base">Nombre: 
+                                                { item.producto.nombre }
+                                            </p>
+                                            <p className="capitalize leading-relaxed text-base">Precio: 
+                                                {item.producto.precio}
+                                            </p> */}
                                             <p className="capitalize leading-relaxed text-base">Cantidad : {item.cantidad}</p>
                                         </li>
                                     ))

@@ -9,7 +9,6 @@ import NumberOrder from './NumberOrder';
 const NewOrder = ({history}) => {
 
     const { id } = useParams();
-
     const [client, saveClient] = useState({});
     const [search, saveSearch] = useState('');
     const [products, saveProducts] = useState([]);
